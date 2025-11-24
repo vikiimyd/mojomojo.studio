@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mojo Studio — Shop</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css">
+</head>
+
+<body>
+  <header>
+    <div class="ribbonshop"></div>
+
+    <!-- Mobile Hamburger Menu Content -->
+    <div id="menubg" class="hidden">
+      <dialog id="menu" open class="hidden show">
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="guide.html">Mojo Guide</a></li>
+            <li><a href="library.html">Fabric Library</a></li>
+          </ul>
+        </nav>
+      </dialog>
+    </div>
+
+    <!-- Menu -->
+    <nav class="top-nav">
+      <!-- Source: (original work) Viki Ding -->
+      <button id="button-menu" class="hidden" aria-label="show navigation">
+        <picture>
+          <img src="images/navicon.png" alt="Menu Icon">
+        </picture>
+      </button>
+
+      <ul id="left-menu" class="nav-wide-left hidden">
+        <li><a href="about.html">About</a></li>
+        <li><a href="guide.html">Mojo Guide</a></li>
+      </ul>
+
+      <!-- Source: (original work) Viki Ding -->
+      <a href="index.html" aria-label="show home page">
+        <picture class="logo">
+          <img src="images/logo.png" alt="Mojo Studio Logo">
+        </picture>
+      </a>
+
+      <ul id="right-menu" class="nav-wide-right hidden">
+        <li><a href="library.html">Fabric Library</a></li>
+        <li><a class="active" href="shop.html">Shop</a></li>
+      </ul>
+
+      <!-- Source: (original work) Viki Ding -->
+      <a href="shop.html" id="shopicon" class="hidden" aria-label="show shop page">
+        <picture>
+          <img src="images/shopiconactive.png" alt="Shop Icon">
+        </picture>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1 class="active">MOJO Shop</h1>
+    </section>
+
+    <section class="box">
+      <!-- Source: (original work) Viki Ding -->
+      <h2>Explore Mojos</h2>
+      <p>
+        A curated collection of transformable pieces, from complete bags to standalone fabric modules and adjustable belts. Each item shares the same language of zippers, textures, and emotional tags, designed to connect and reconfigure effortlessly
+      </p>
+      <p>
+        Together, they form a living ecosystem of materials and feelings — inviting you to mix, match, and create your own combinations.
+      </p>
+    </section>
+
+    <picture>
+      <!-- Source: Midjourney -->
+      <img src="images/spic1.png" alt="Zipper Pattern">
+    </picture>
+    <p class="source-tag">source: <cite><a href="https://www.midjourney.com/">midjourney</a></cite></p>
+
+    <section class="mood-filter">
+      <h2>Feel the collection by mood</h2>
+      <p class="subtitle">From quiet clarity to grounded warmth to sharp modern forms — browse by emotional lens.</p>
+
+      <div class="tags">
+        <button id="allproducts" aria-label="show all products">+ All </button>
+        <button id="calmproducts" aria-label="show products with calm label">+ Calm </button>
+        <button id="resilientproducts" aria-label="show products with resilient label">+ Resilient</button>
+        <button id="sereneproducts" aria-label="show products with serene label">+ Serene</button>
+      </div>
+    </section>
+
+    <div class="products">
+      <section class="product hidden" id="s1">
+        <figure>
+          <!-- Source: Midjourney -->
+          <button id="unit1" aria-label="show detailed information and larger picture of product unit1"><img src="images/spic2.png" alt="Used Cotton Shirt"></button>
+        </figure>
+        <h3>UNIT–01: CALM SHELL</h3>
+        <p>$225.00 USD</p>
+        <p>FW25</p>
+      </section>
+
+      <section class="product hidden" id="s2">
+        <figure>
+          <!-- Source: Midjourney -->
+          <button id="unit2" aria-label="show detailed information and larger picture of product unit2"><img src="images/spic3.png" alt="Used Wool Coat"></button>
+        </figure>
+        <h3>UNIT–02: EARTH LINE</h3>
+        <p>$225.00 USD</p>
+        <p>FW25</p>
+      </section>
+
+      <section class="product hidden" id="s3">
+        <figure>
+          <!-- Source: Midjourney -->
+          <button id="unit3" aria-label="show detailed information and larger picture of product unit3"><img src="images/spic4.png" alt="Used Silk Blouse"></button>
+        </figure>
+        <h3>UNIT–03: GRAVITY </h3>
+        <p>$225.00 USD</p>
+        <p>FW25</p>
+      </section>
+
+      <section class="product hidden" id="s4">
+        <figure>
+          <!-- Source: Midjourney -->
+          <button id="unit4" aria-label="show detailed information and larger picture of product unit4"><img src="images/spic5.png" alt="Used Linen Shirt"></button>
+        </figure>
+        <h3>UNIT–04: LUCID FLOWL</h3>
+        <p>$575.00 USD</p>
+        <p>FW25</p>
+      </section>
+
+      <section class="product hidden" id="s5">
+        <figure>
+          <!-- Source: Midjourney -->
+          <button id="unit5" aria-label="show detailed information and larger picture of product unit5"><img src="images/spic6.png" alt="Used Denim Jacket"></button>
+        </figure>
+        <h3>UNIT–05: WARM LOOP</h3>
+        <p>$575.00 USD</p>
+        <p>FW25</p>
+      </section>
+
+      <section class="product hidden" id="s6">
+        <figure>
+          <!-- Source: Midjourney -->
+          <button id="unit6" aria-label="show detailed information and larger picture of product unit6"><img src="images/spic7.png" alt="Used Knit Sweater"></button>
+        </figure>
+        <h3>UNIT–06: CORE UNIT</h3>
+        <p>$575.00 USD</p>
+        <p>FW25</p>
+      </section>
+    </div>
+
+    <!-- Modal Dialog Shop-->
+    <!-- Text Source: (original work) Viki Ding -->
+    <div id="modalshopbg" class="hidden">
+      <dialog id="modalshop" class="hidden modalshop" open>
+
+        <!-- Close Button -->
+        <button id="button-close-modal-shop" aria-label="Close the modal">✕</button>
+
+        <!-- UNIT–01 -->
+        <section id="unit1content" class="product-modal-content hidden">
+          <figure>
+            <img src="images/spic2.png" alt="Unit 01 Product">
+          </figure>
+
+          <div class="s1names">
+            <h2>UNIT–01: CALM SHELL</h2>
+            <p>#U0101</p>
+          </div>
+
+          <p>
+            Built from soft, steady cotton panels, CALM SHELL keeps the quiet clarity
+            of its original fabric. The form folds gently around the body, holding a sense
+            of ease while gaining new structure through its modular construction. What once
+            moved with morning light now becomes a calm, protective shape for everyday use.
+          </p>
+
+          <p>
+            Upcycling process: Cotton panels from Fabric #A0610 were re-cut into curved modules
+            and assembled through the Mojo zipper system to create a foldable shell-like geometry.
+          </p>
+
+          <div class="unit1tag">
+            <p>
+              Calm
+            </p>
+            <p>
+              FW25
+            </p>
+            <button id="fabric1id">
+              Check #A0610
+            </button>
+          </div>
+        </section>
+
+        <!-- UNIT–02 -->
+        <section id="unit2content" class="product-modal-content hidden">
+          <figure>
+            <img src="images/spic3.png" alt="Unit 02 Product">
+          </figure>
+
+          <div class="s2names">
+            <h2>UNIT–02: EARTH LINE</h2>
+            <p>#U0202</p>
+          </div>
+
+          <p>
+            EARTH LINE carries a grounded sense of movement, shaped by the steady weight
+            and textured resilience of its original wool material. The form follows a simple
+            horizontal line that wraps the body with quiet solidity, echoing the fabric’s past
+            life in colder climates. Its structure feels reassuring, marked by calm endurance
+            rather than force.
+          </p>
+
+          <p>
+            Upcycling process: Wool panels from Fabric #A0720 were trimmed into elongated
+            modules and reassembled to emphasize linear geometry. The material’s natural
+            density was preserved, giving the final piece a stable, earthbound form.
+          </p>
+
+          <div class="unit2tag">
+            <p>
+              Resilient
+            </p>
+            <p>
+              FW25
+            </p>
+            <button id="fabric2id">
+              Check #A0720
+            </button>
+          </div>
+        </section>
+
+        <!-- UNIT–03 -->
+        <section id="unit3content" class="product-modal-content hidden">
+          <figure>
+            <img src="images/spic4.png" alt="Unit 03 Product">
+          </figure>
+
+          <div class="s3names">
+            <h2>UNIT–03: GRAVITY</h2>
+            <p>#U0303</p>
+          </div>
+
+          <p>
+            GRAVITY FORM balances lightness with tension, shaped from silk that once carried
+            a reflective softness. Reconstructed into sharper, weight-conscious planes,
+            the piece creates a contrast between fluid origins and a newly structured body.
+            It holds a subtle pull, quiet, controlled, and deliberate in form.
+          </p>
+
+          <p>
+            Upcycling process: Silk from Fabric #A0327 was cut into layered angular panels
+            to create a sense of suspended tension. Its natural sheen was kept intact,
+            adding depth to the geometric construction.
+          </p>
+
+          <div class="unit3tag">
+            <p>
+              Calm
+            </p>
+            <p>
+              FW25
+            </p>
+            <button id="fabric3id">
+              Check #A0327
+            </button>
+          </div>
+        </section>
+
+        <!-- UNIT–04 -->
+        <section id="unit4content" class="product-modal-content hidden">
+          <figure>
+            <img src="images/spic5.png" alt="Unit 04 Product">
+          </figure>
+
+          <div class="s4names">
+            <h2>UNIT–04: LUCID FLOW</h2>
+            <p>#U0404</p>
+          </div>
+
+          <p>
+            LUCID FLOW moves with an easy, open clarity, shaped from linen that once lived
+            in warm, sunlit environments. Its form follows gentle curves and relaxed angles,
+            creating a structure that feels light and unforced. The piece reflects a sense
+            of ease, transparent, breathable, and quietly confident.
+          </p>
+
+          <p>
+            Upcycling process: Linen pieces from Fabric #A0261 were transformed into soft
+            curved modules. Their natural texture guides the bag’s flowing outline,
+            maintaining the fabric’s open-air quality.
+          </p>
+
+          <div class="unit4tag">
+            <p>
+              Serene
+            </p>
+            <p>
+              FW25
+            </p>
+            <button id="fabric4id">
+              Check #A0261
+            </button>
+          </div>
+        </section>
+
+        <!-- UNIT–05 -->
+        <section id="unit5content" class="product-modal-content hidden">
+          <figure>
+            <img src="images/spic6.png" alt="Unit 05 Product">
+          </figure>
+
+          <div class="s5names">
+            <h2>UNIT–05: WARM LOOP</h2>
+            <p>#U0505</p>
+          </div>
+
+          <p>
+            WARM LOOP keeps the gentle warmth and softness of its knit origins, shaped into
+            a circular form that wraps around itself. The structure feels familiar and comforting,
+            holding the memory of fabric that once softened colder days. The final shape carries
+            quiet energy, warm, approachable, and steady.
+          </p>
+
+          <p>
+            Upcycling process: Knit segments from Fabric #A0524 were deconstructed into flexible
+            looped modules and rebuilt into a rounded format that preserves the yarn’s natural
+            tension and softness.
+          </p>
+
+          <div class="unit5tag">
+            <p>
+              Resilient
+            </p>
+            <p>
+              FW25
+            </p>
+            <button id="fabric5id">
+              Check #A0524
+            </button>
+          </div>
+        </section>
+
+        <!-- UNIT–06 -->
+        <section id="unit6content" class="product-modal-content hidden">
+          <figure>
+            <img src="images/spic7.png" alt="Unit 06 Product">
+          </figure>
+
+          <div class="s6names">
+            <h2>UNIT–06: CORE UNIT</h2>
+            <p>#U0606</p>
+          </div>
+
+          <p>
+            CORE UNIT draws its stability and practicality from durable denim, creating a
+            firm structure at the center of the collection. Its geometric build highlights
+            strength and clarity, echoing the dependable nature of its original material.
+            This piece serves as an anchor, direct, adaptable, and confidently grounded.
+          </p>
+
+          <p>
+            Upcycling process: Denim from Fabric #A0458 was reshaped into reinforced modular
+            panels and assembled into a solid core structure. The material’s durability forms
+            the foundation of the unit’s clean, architectural shape.
+          </p>
+
+          <div class="unit6tag">
+            <p>
+              Serene
+            </p>
+            <p>
+              FW25
+            </p>
+            <button id="fabric6id">
+              Check #A0458
+            </button>
+          </div>
+        </section>
+      </dialog>
+    </div>
+
+    <!-- Fabric Library Modal Dialog -->
+    <!-- Text Source: (original work) Viki Ding -->
+    <div id="modalfabricbg" class="hidden">
+      <dialog id="modalfabric" class="hidden modalfabric" open>
+
+        <!-- Close Button -->
+        <button id="button-close-modal-fabric" aria-label="Close">✕</button>
+
+        <!-- FABRIC 1 — COTTON SHIRT -->
+        <section id="fabric1-section" class="fabric-modal-content hidden">
+          <figure>
+            <img src="images/fpic1.png" alt="cotton shirt enlarged preview">
+          </figure>
+
+          <div class="f1names">
+            <h2>COTTON SHIRT</h2>
+            <p>#A0143</p>
+          </div>
+
+          <p>Once a crisp layer against the morning wind, this cotton shirt softened with each quiet day spent near the water, gathering the smell of light, salt, and the quiet courage of starting over. Once a uniform of certainty, it now drifts gently, a piece of calm that learned how to breathe with the tide.</p>
+          <p>Upcycling process: Cut into lightweight modular panels; edges softened and preserved to keep the shirt’s shoreline calmness.</p>
+          <p>Contributor: Liu, coastal walker</p>
+
+          <div class="f1tags">
+            <p>Cotton</p>
+            <p>2019</p>
+            <p>Dalian</p>
+            <p>Calm</p>
+          </div>
+
+        </section>
+
+        <!-- FABRIC 2 — WOOL COAT -->
+        <section id="fabric2-section" class="fabric-modal-content hidden">
+          <figure>
+            <img src="images/fpic2.png" alt="wool coat enlarged preview">
+          </figure>
+
+          <div class="f2names">
+            <h2>WOOL COAT</h2>
+            <p>#A0278</p>
+          </div>
+
+          <p>This wool coat once braced against long northern winters, absorbing the quiet weight of snow and the warmth of shared breaths on cold mornings. Its surface holds the memory of resilience, textured and patient, shaped by seasons that asked it to endure and shelter.</p>
+          <p>Upcycling process: Rewoven into dense modular strips; reinforced seams keep the coat’s protective strength within smaller, adaptable panels.</p>
+          <p>Contributor: Chen, winter commuter</p>
+
+          <div class="f2tags">
+            <p>Wool</p>
+            <p>2018</p>
+            <p>Harbin</p>
+            <p>Resilient</p>
+          </div>
+
+        </section>
+
+        <!-- FABRIC 3 — SILK BLOUSE -->
+        <section id="fabric3-section" class="fabric-modal-content hidden">
+          <figure>
+            <img src="images/fpic3.png" alt="silk blouse enlarged preview">
+          </figure>
+
+          <div class="f3names">
+            <h2>SILK BLOUSE</h2>
+            <p>#A0341</p>
+          </div>
+
+          <p>Soft as breath and reflective like dusk light, this silk blouse once shimmered through evenings filled with anticipation and quiet glamour. It carries traces of delicate courage, the kind that glows quietly rather than loudly, slipping through memory like a warm whisper along the skin.</p>
+          <p>Upcycling process: Sectioned into fine modular ribbons; each panel preserves the silk’s natural sheen, allowing it to drape with renewed intention.</p>
+          <p>Contributor: Yan, night wanderer</p>
+
+          <div class="f3tags">
+            <p>Silk</p>
+            <p>2020</p>
+            <p>Shanghai</p>
+            <p>Calm</p>
+          </div>
+
+        </section>
+
+        <!-- FABRIC 4 — LINEN SHIRT -->
+        <section id="fabric4-section" class="fabric-modal-content hidden">
+          <figure>
+            <img src="images/fpic4.png" alt="linen shirt enlarged preview">
+          </figure>
+
+          <div class="f4names">
+            <h2>LINEN SHIRT</h2>
+            <p>#A0452</p>
+          </div>
+
+          <p>Woven from natural fibers and shaped by sun-heated afternoons, this linen shirt carries the warmth of slow summers, the softness of open windows, wooden floors, and quiet breaths between moments. Its gentle wrinkles trace time without fear, holding a serenity earned from living simply and honestly.</p>
+          <p>Upcycling process: Split into breathable modular tiles; texture preserved to maintain the shirt’s organic rhythm and relaxed structure.</p>
+          <p>Contributor: Mu, slow-living enthusiast</p>
+
+          <div class="f4tags">
+            <p>Linen</p>
+            <p>2023</p>
+            <p>London</p>
+            <p>Serene</p>
+          </div>
+
+        </section>
+
+        <!-- FABRIC 5 — DENIM JACKET -->
+        <section id="fabric5-section" class="fabric-modal-content hidden">
+          <figure>
+            <img src="images/fpic5.png" alt="denim jacket enlarged preview">
+          </figure>
+
+          <div class="f5names">
+            <h2>DENIM JACKET</h2>
+            <p>#A0519</p>
+          </div>
+
+          <p>This denim jacket once travelled through cities and rain-polished pavements, collecting stories in the worn edges of its sleeves. Built to last and shaped by movement, it holds the grounded resilience of someone always ready to begin again—practical, steady, and unafraid of change.</p>
+          <p>Upcycling process: Recut into sturdy modular panels; reinforced stitching keeps the jacket’s durability alive within flexible, buildable pieces.</p>
+          <p>Contributor: Qiao, urban cyclist</p>
+
+          <div class="f5tags">
+            <p>Denim</p>
+            <p>2016</p>
+            <p>Madrid</p>
+            <p>Resilient</p>
+          </div>
+
+        </section>
+
+        <!-- FABRIC 6 — KNIT SWEATER -->
+        <section id="fabric6-section" class="fabric-modal-content hidden">
+          <figure>
+            <img src="images/fpic6.png" alt="knit sweater enlarged preview">
+          </figure>
+
+          <div class="f6names">
+            <h2>KNIT SWEATER</h2>
+            <p>#A0630</p>
+          </div>
+
+          <p>Wrapped in warm loops of yarn, this knit sweater once softened cold mornings and carried quiet moments of comfort. Its woven patterns echo tenderness, a reminder of hands that made it and days spent seeking warmth in familiar textures.</p>
+          <p>Upcycling process: Deconstructed into plush modular patches; yarn tension preserved to maintain the sweater’s cozy, enveloping feel.</p>
+          <p>Contributor: Rui, sentimental maker</p>
+
+          <div class="f6tags">
+            <p>Knit</p>
+            <p>2021</p>
+            <p>Paris</p>
+            <p>Serene</p>
+          </div>
+        </section>
+      </dialog>
+    </div>
+
+    <p class="disclaimer">Disclaimer: The products shown here are virtual prototypes. All images were generated using Midjourney and do not represent physical inventory.</p>
+    <p class="disclaimer-source source-tag">source: <cite><a href="https://www.midjourney.com/">midjourney</a></cite></p>
+  </main>
+
+  <hr class="full-line">
+  <footer>
+    <ul class="social-links">
+      <li>
+        <picture>
+          <!-- Google Material Symbols -->
+          <img src="images/insicon.png" alt="Instagram Icon">
+        </picture>
+        <a href="https://www.instagram.com/mojomojo.studio?igsh=YjF2bGg2aWUwbzc2">INSTAGRAM</a>
+      </li>
+      <li>
+        <picture>
+          <!-- Google Material Symbols -->
+          <img src="images/ytbicon.png" alt="YouTube Icon">
+        </picture>
+        <a href="https://youtube.com/@mojomojostudio?si=yyE4WXS1kuARmVXn">YOUTUBE</a>
+      </li>
+      <li>
+        <picture>
+          <!-- Google Material Symbols -->
+          <img src="images/emailicon.png" alt="Email">
+        </picture>
+        <a href="mailto:hello@mojomojo.studio">EMAIL</a>
+      </li>
+    </ul>
+
+    <div class="footer-center">
+      <p>2025 Mojo Studio ©</p>
+      <p class="disclaimer-icon">Disclaimer: All social icon images are from Google Mateiral Symbols.</p>
+      <p class="disclaimer-icon-source">source: <cite><a href="https://fonts.google.com/icons">google material symbols</a></cite></p>
+    </div>
+
+    <picture class="footer-right">
+      <!-- Source: (original work) Viki Ding -->
+      <source srcset="images/logowide.png" media="(min-width: 900px)">
+      <img src="images/footerlogo.png" alt="Mojo Patch Logo">
+    </picture>
+  </footer>
+
+  <script src="scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/interactivity.js"></script>
+</body>
+
+</html>

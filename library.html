@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mojo Studio — Fabric Library</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css">
+</head>
+
+<body>
+  <header>
+    <div class="ribbonlibrary"></div>
+
+    <!-- Mobile Hamburger Menu Content -->
+    <div id="menubg" class="hidden">
+      <dialog id="menu" open class="hidden show">
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="guide.html">Mojo Guide</a></li>
+            <li><a href="library.html">Fabric Library</a></li>
+          </ul>
+        </nav>
+      </dialog>
+    </div>
+
+    <!-- Menu -->
+    <nav class="top-nav">
+      <!-- Source: (original work) Viki Ding -->
+      <button id="button-menu" class="hidden" aria-label="show navigation">
+        <picture>
+          <img src="images/navicon.png" alt="Menu Icon">
+        </picture>
+      </button>
+
+      <ul id="left-menu" class="nav-wide-left hidden">
+        <li><a href="about.html">About</a></li>
+        <li><a href="guide.html">Mojo Guide</a></li>
+      </ul>
+
+      <!-- Source: (original work) Viki Ding -->
+      <a href="index.html" aria-label="show home page">
+        <picture class="logo">
+          <img src="images/logo.png" alt="Mojo Studio Logo">
+        </picture>
+      </a>
+
+      <ul id="right-menu" class="nav-wide-right hidden">
+        <li><a class="active" href="library.html">Fabric Library</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+
+      <!-- Source: (original work) Viki Ding -->
+      <a href="shop.html" id="shopicon" class="hidden" aria-label="show shop page">
+        <picture>
+          <img src="images/shopicon.png" alt="Shop Icon">
+        </picture>
+      </a>
+    </nav>
+
+  </header>
+
+  <main>
+    <section>
+      <h1>Fabric Library</h1>
+    </section>
+
+    <section class="box">
+      <!-- Source: (original work) Viki Ding -->
+      <h2>Fabric Archive</h2>
+      <p>
+        The Fabric Library is a digital collection of modular fabrics, each represented by a unique card. Every card shows the fabric’s texture, style, color, and emotional tag — from nostalgia and freedom to hope and comfort — recorded in its Fabric ID.
+      </p>
+      <p>
+        Through these cards, you can browse, compare, and connect materials that carry both physical and emotional value, forming a collective story of renewal of your own.
+      </p>
+    </section>
+
+
+    <picture>
+      <!-- Source: Midjourney -->
+      <img src="images/archive.png" alt="Archive Pattern">
+    </picture>
+    <p class="source-tag">source: <cite><a href="https://www.midjourney.com/">midjourney</a></cite></p>
+
+    <section class="mood-filter">
+      <h2>Feel the collection by mood</h2>
+      <p class="subtitle">From quiet clarity to grounded warmth to sharp modern forms — browse by emotional lens.</p>
+
+      <div class="tags">
+        <button id="allfabric" aria-label="show all upcycled fabrics">+ All </button>
+        <button id="calmfabric" aria-label="show upcycled fabrics with calm label">+ Calm </button>
+        <button id="resilientfabric" aria-label="show upcycled fabrics with resilient label">+ Resilient</button>
+        <button id="serenefabric" aria-label="show upcycled fabrics with serene label">+ Serene</button>
+      </div>
+    </section>
+
+
+    <div class="fabrics">
+      <section class="fabric hidden" id="fl1">
+        <figure>
+          <!-- Source: Midjourney -->
+          <button id="fabric1" aria-label="show detailed information and larger picture of cotton shirt"><img src="images/fpic1.png" alt="Used Cotton Shirt"></button>
+        </figure>
+        <h3>COTTON SHIRT</h3>
+        <p>MOJO ID: M0460</p>
+        <p>Style: Crisp yet softened</p>
+        <p>Emotion: ☁️ calm</p>
+      </section>
+
+      <section class="fabric hidden" id="fl2">
+        <figure>
+          <!-- Source: Midjourney -->
+          <button id="fabric2" aria-label="show detailed information and larger picture of wool coat"><img src="images/fpic2.png" alt="Used Wool Coat"></button>
+        </figure>
+        <h3>WOOL COAT</h3>
+        <p>MOJO ID: M0703</p>
+        <p>Style: Textured and structured</p>
+        <p>Emotion: 🌍 resilient</p>
+      </section>
+
+      <section class="fabric hidden" id="fl3">
+        <figure>
+          <!-- Source: Midjourney -->
+          <button id="fabric3" aria-label="show detailed information and larger picture of silk blouse"><img src="images/fpic3.png" alt="Used Silk Blouse"></button>
+        </figure>
+        <h3>SILK BLOUSE</h3>
+        <p>MOJO ID: M0827</p>
+        <p>Style: Smooth, reflective</p>
+        <p>Emotion: ☁️ calm</p>
+      </section>
+
+      <section class="fabric hidden" id="fl4">
+        <figure>
+          <!-- Source: Midjourney -->
+          <button id="fabric4" aria-label="show detailed information and larger picture of linen shirt"><img src="images/fpic4.png" alt="Used Linen Shirt"></button>
+        </figure>
+        <h3>LINEN SHIRT</h3>
+        <p>MOJO ID: M0908</p>
+        <p>Style: Natural fibers</p>
+        <p>Emotion: 🌤 serene</p>
+      </section>
+
+      <section class="fabric hidden" id="fl5">
+        <figure>
+          <!-- Source: Midjourney -->
+          <button id="fabric5" aria-label="show detailed information and larger picture of denim jacket"><img src="images/fpic5.png" alt="Used Denim Jacket"></button>
+        </figure>
+        <h3>DENIM JACKET</h3>
+        <p>MOJO ID: M0945</p>
+        <p>Style: Practical, modular-ready</p>
+        <p>Emotion: 🌍 resilient</p>
+      </section>
+
+      <section class="fabric hidden" id="fl6">
+        <figure>
+          <!-- Source: Midjourney -->
+          <button id="fabric6" aria-label="show detailed information and larger picture of knit sweater"><img src="images/fpic6.png" alt="Used Knit Sweater"></button>
+        </figure>
+        <h3>KNIT SWEATER</h3>
+        <p>MOJO ID: M0968</p>
+        <p>Style: Cozy, warm weave</p>
+        <p>Emotion: 🌤 serene</p>
+      </section>
+    </div>
+
+    <!-- Modal Dialog -->
+    <!-- Text Source: (original work) Viki Ding -->
+    <div id="modalfabricbg" class="hidden">
+      <dialog id="modalfabric" open class="hidden modalfabric">
+
+        <!-- Close Button -->
+        <button id="button-close-modal-fabric" aria-label="Close the modal">✕</button>
+
+        <!-- FABRIC 1 — COTTON SHIRT -->
+        <section id="fabric1-section" class="fabric-modal-content hidden">
+          <figure>
+            <img src="images/fpic1.png" alt="cotton shirt enlarged preview">
+          </figure>
+
+          <div class="f1names">
+            <h2>COTTON SHIRT</h2>
+            <p>#A0143</p>
+          </div>
+
+          <p>Once a crisp layer against the morning wind, this cotton shirt softened with each quiet day spent near the water, gathering the smell of light, salt, and the quiet courage of starting over. Once a uniform of certainty, it now drifts gently, a piece of calm that learned how to breathe with the tide.</p>
+          <p>Upcycling process: Cut into lightweight modular panels; edges softened and preserved to keep the shirt’s shoreline calmness.</p>
+          <p>Contributor: Liu, coastal walker</p>
+
+          <div class="f1tags">
+            <p>Cotton</p>
+            <p>2019</p>
+            <p>Dalian</p>
+            <p>Calm</p>
+          </div>
+
+        </section>
+
+        <!-- FABRIC 2 — WOOL COAT -->
+        <section id="fabric2-section" class="fabric-modal-content hidden">
+          <figure>
+            <img src="images/fpic2.png" alt="wool coat enlarged preview">
+          </figure>
+
+          <div class="f2names">
+            <h2>WOOL COAT</h2>
+            <p>#A0278</p>
+          </div>
+
+          <p>This wool coat once braced against long northern winters, absorbing the quiet weight of snow and the warmth of shared breaths on cold mornings. Its surface holds the memory of resilience, textured and patient, shaped by seasons that asked it to endure and shelter.</p>
+          <p>Upcycling process: Rewoven into dense modular strips; reinforced seams keep the coat’s protective strength within smaller, adaptable panels.</p>
+          <p>Contributor: Chen, winter commuter</p>
+
+          <div class="f2tags">
+            <p>Wool</p>
+            <p>2018</p>
+            <p>Harbin</p>
+            <p>Resilient</p>
+          </div>
+
+        </section>
+
+        <!-- FABRIC 3 — SILK BLOUSE -->
+        <section id="fabric3-section" class="fabric-modal-content hidden">
+          <figure>
+            <img src="images/fpic3.png" alt="silk blouse enlarged preview">
+          </figure>
+
+          <div class="f3names">
+            <h2>SILK BLOUSE</h2>
+            <p>#A0341</p>
+          </div>
+
+          <p>Soft as breath and reflective like dusk light, this silk blouse once shimmered through evenings filled with anticipation and quiet glamour. It carries traces of delicate courage, the kind that glows quietly rather than loudly, slipping through memory like a warm whisper along the skin.</p>
+          <p>Upcycling process: Sectioned into fine modular ribbons; each panel preserves the silk’s natural sheen, allowing it to drape with renewed intention.</p>
+          <p>Contributor: Yan, night wanderer</p>
+
+          <div class="f3tags">
+            <p>Silk</p>
+            <p>2020</p>
+            <p>Shanghai</p>
+            <p>Calm</p>
+          </div>
+
+        </section>
+
+        <!-- FABRIC 4 — LINEN SHIRT -->
+        <section id="fabric4-section" class="fabric-modal-content hidden">
+          <figure>
+            <img src="images/fpic4.png" alt="linen shirt enlarged preview">
+          </figure>
+
+          <div class="f4names">
+            <h2>LINEN SHIRT</h2>
+            <p>#A0452</p>
+          </div>
+
+          <p>Woven from natural fibers and shaped by sun-heated afternoons, this linen shirt carries the warmth of slow summers, the softness of open windows, wooden floors, and quiet breaths between moments. Its gentle wrinkles trace time without fear, holding a serenity earned from living simply and honestly.</p>
+          <p>Upcycling process: Split into breathable modular tiles; texture preserved to maintain the shirt’s organic rhythm and relaxed structure.</p>
+          <p>Contributor: Mu, slow-living enthusiast</p>
+
+          <div class="f4tags">
+            <p>Linen</p>
+            <p>2023</p>
+            <p>London</p>
+            <p>Serene</p>
+          </div>
+
+        </section>
+
+        <!-- FABRIC 5 — DENIM JACKET -->
+        <section id="fabric5-section" class="fabric-modal-content hidden">
+          <figure>
+            <img src="images/fpic5.png" alt="denim jacket enlarged preview">
+          </figure>
+
+          <div class="f5names">
+            <h2>DENIM JACKET</h2>
+            <p>#A0519</p>
+          </div>
+
+          <p>This denim jacket once travelled through cities and rain-polished pavements, collecting stories in the worn edges of its sleeves. Built to last and shaped by movement, it holds the grounded resilience of someone always ready to begin again—practical, steady, and unafraid of change.</p>
+          <p>Upcycling process: Recut into sturdy modular panels; reinforced stitching keeps the jacket’s durability alive within flexible, buildable pieces.</p>
+          <p>Contributor: Qiao, urban cyclist</p>
+
+          <div class="f5tags">
+            <p>Denim</p>
+            <p>2016</p>
+            <p>Madrid</p>
+            <p>Resilient</p>
+          </div>
+
+        </section>
+
+        <!-- FABRIC 6 — KNIT SWEATER -->
+        <section id="fabric6-section" class="fabric-modal-content hidden">
+          <figure>
+            <img src="images/fpic6.png" alt="knit sweater enlarged preview">
+          </figure>
+
+          <div class="f6names">
+            <h2>KNIT SWEATER</h2>
+            <p>#A0630</p>
+          </div>
+
+          <p>Wrapped in warm loops of yarn, this knit sweater once softened cold mornings and carried quiet moments of comfort. Its woven patterns echo tenderness, a reminder of hands that made it and days spent seeking warmth in familiar textures.</p>
+          <p>Upcycling process: Deconstructed into plush modular patches; yarn tension preserved to maintain the sweater’s cozy, enveloping feel.</p>
+          <p>Contributor: Rui, sentimental maker</p>
+
+          <div class="f6tags">
+            <p>Knit</p>
+            <p>2021</p>
+            <p>Paris</p>
+            <p>Serene</p>
+          </div>
+        </section>
+      </dialog>
+    </div>
+
+    <p class="disclaimer">Disclaimer: The fabrics shown in this archive represent conceptual/virtual samples. All images were generated using Midjourney.</p>
+    <p class="disclaimer-source source-tag">source: <cite><a href="https://www.midjourney.com/">midjourney</a></cite></p>
+  </main>
+
+  <hr class="full-line">
+  <footer>
+    <ul class="social-links">
+      <li>
+        <picture>
+          <!-- Google Material Symbols -->
+          <img src="images/insicon.png" alt="Instagram Icon">
+        </picture>
+        <a href="https://www.instagram.com/mojomojo.studio?igsh=YjF2bGg2aWUwbzc2">INSTAGRAM</a>
+      </li>
+      <li>
+        <picture>
+          <!-- Google Material Symbols -->
+          <img src="images/ytbicon.png" alt="YouTube Icon">
+        </picture>
+        <a href="https://youtube.com/@mojomojostudio?si=yyE4WXS1kuARmVXn">YOUTUBE</a>
+      </li>
+      <li>
+        <picture>
+          <!-- Google Material Symbols -->
+          <img src="images/emailicon.png" alt="Email">
+        </picture>
+        <a href="mailto:hello@mojomojo.studio">EMAIL</a>
+      </li>
+    </ul>
+
+    <div class="footer-center">
+      <p>2025 Mojo Studio ©</p>
+      <p class="disclaimer-icon">Disclaimer: All social icon images are from Google Mateiral Symbols.</p>
+      <p class="disclaimer-icon-source">source: <cite><a href="https://fonts.google.com/icons">google material symbols</a></cite></p>
+    </div>
+
+    <picture class="footer-right">
+      <!-- Source: (original work) Viki Ding -->
+      <source srcset="images/logowide.png" media="(min-width: 900px)">
+      <img src="images/footerlogo.png" alt="Mojo Patch Logo">
+    </picture>
+  </footer>
+
+  <script src="scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/interactivity.js"></script>
+</body>
+
+</html>

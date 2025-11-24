@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mojo Studio</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css">
+</head>
+
+<body>
+  <header>
+    <div class="ribbonindex"></div>
+
+    <!-- Mobile Hamburger Menu Content -->
+    <div id="menubg" class="hidden">
+      <dialog id="menu" open class="hidden show">
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="guide.html">Mojo Guide</a></li>
+            <li><a href="library.html">Fabric Library</a></li>
+          </ul>
+        </nav>
+      </dialog>
+    </div>
+
+    <!-- Menu -->
+    <nav class="top-nav">
+      <!-- Source: (original work) Viki Ding -->
+      <button id="button-menu" class="hidden" aria-label="show navigation">
+        <picture>
+          <img src="images/navicon.png" alt="Menu Icon">
+        </picture>
+      </button>
+
+      <ul id="left-menu" class="nav-wide-left hidden">
+        <li><a href="about.html">About</a></li>
+        <li><a href="guide.html">Mojo Guide</a></li>
+      </ul>
+
+      <!-- Source: (original work) Viki Ding -->
+      <a href="index.html" aria-label="show home page">
+        <picture class="logo">
+          <img src="images/logo.png" alt="Mojo Studio Logo">
+        </picture>
+      </a>
+
+      <ul id="right-menu" class="nav-wide-right hidden">
+        <li><a href="library.html">Fabric Library</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+
+      <!-- Source: (original work) Viki Ding -->
+      <a href="shop.html" id="shopicon" class="hidden" aria-label="show shop page">
+        <picture>
+          <img src="images/shopicon.png" alt="Shop Icon">
+        </picture>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <picture>
+      <!-- Source: (original work) Viki Ding -->
+      <img class="moodboard" src="images/moodboard.jpg" alt="moodboard">
+    </picture>
+
+    <section class="flexbox">
+      <div class="flex-left">
+        <h2>What is the Mojo Bag?</h2>
+        <p>
+          <!-- Source: (original work) Viki Ding -->
+          Mojo is a modular fashion system that gives new life to discarded fabrics through design.
+          The Mojo Bag is built from modular fabric pieces that can be freely connected, detached, and rearranged. Each piece carries its own texture, color, and emotional tag, allowing you to create a bag that evolves with your mood and story. Designed to be both functional and expressive, the Mojo Bag turns sustainability into a personal act of creativity — a system where every module can be reimagined, and every connection has meaning.
+        </p>
+      </div>
+
+      <div class="flex-right">
+        <picture>
+          <!-- Source: Midjourney -->
+          <source srcset="images/homepic1wide.png" media="(min-width: 900px)">
+          <img class="bags" src="images/homepic1.png" alt="Mojo Bags">
+        </picture>
+        <p class="source-tag">source: <cite><a href="https://www.midjourney.com/">midjourney</a></cite></p>
+      </div>
+    </section>
+
+    <div class="flexbox">
+      <div class="flex-left1">
+        <section class="fb">
+          <h2>Fabric Library</h2>
+          <p>
+            Here you can explore different up-cycled fabrics, learn their stories, and find materials for your next Mojo.
+          </p>
+          <a href="library.html">Discover Fabric Library</a>
+        </section>
+
+        <section class="mg">
+          <h2>Mojo Guide</h2>
+          <p>
+            Here you can learn how to assemble, customize, and care for your Mojo step by step.
+          </p>
+          <a href="guide.html">Discover Mojo Guide</a>
+        </section>
+      </div>
+
+      <div class="flex-right1">
+        <picture>
+          <!-- Source: Midjourney -->
+          <img class="detail" src="images/homepic2.png" alt="Mojo Bag Fabric Detail">
+        </picture>
+        <p class="source-tag">source: <cite><a href="https://www.midjourney.com/">midjourney</a></cite></p>
+      </div>
+    </div>
+  </main>
+
+  <hr class="full-line">
+  <footer>
+    <ul class="social-links">
+      <li>
+        <picture>
+          <!-- Google Material Symbols -->
+          <img src="images/insicon.png" alt="Instagram Icon">
+        </picture>
+        <a href="https://www.instagram.com/mojomojo.studio?igsh=YjF2bGg2aWUwbzc2">INSTAGRAM</a>
+      </li>
+      <li>
+        <picture>
+          <!-- Google Material Symbols -->
+          <img src="images/ytbicon.png" alt="YouTube Icon">
+        </picture>
+        <a href="https://youtube.com/@mojomojostudio?si=yyE4WXS1kuARmVXn">YOUTUBE</a>
+      </li>
+      <li>
+        <picture>
+          <!-- Google Material Symbols -->
+          <img src="images/emailicon.png" alt="Email">
+        </picture>
+        <a href="mailto:hello@mojomojo.studio">EMAIL</a>
+      </li>
+    </ul>
+
+    <div class="footer-center">
+      <p>2025 Mojo Studio ©</p>
+      <p class="disclaimer-icon">Disclaimer: All social icon images are from Google Mateiral Symbols.</p>
+      <p class="disclaimer-icon-source">source: <cite><a href="https://fonts.google.com/icons">google material symbols</a></cite></p>
+    </div>
+
+    <picture class="footer-right">
+      <!-- Source: (original work) Viki Ding -->
+      <source srcset="images/logowide.png" media="(min-width: 900px)">
+      <img src="images/footerlogo.png" alt="Mojo Patch Logo">
+    </picture>
+  </footer>
+
+  <script src="scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/interactivity.js"></script>
+</body>
+
+</html>
